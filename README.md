@@ -1,3 +1,3 @@
 # Calculadora
 
-## Calculadora simples usando apenas JavaScript
+## Calculadora simples feita 100% em JavaScript
