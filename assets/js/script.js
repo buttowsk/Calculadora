@@ -1,3 +1,4 @@
+//// Variaveis ////
 const body = document.body;
 const main = document.createElement("main");
 const visor = document.createElement("output");
@@ -7,30 +8,14 @@ const mais = document.createElement('button')
 const menos = document.createElement('button')
 const vezes = document.createElement('button')
 const dividido = document.createElement('button')
+/////////////////////
 
-let styleSheet = null;
-dynamicAnimation = (name,styles) => {
-// Creating a style element
-// To add the keyframes
-if (!styleSheet){
-  styleSheet = document.createElement('style');
-  styleSheet.type = 'text/css';
-  document.head.appendChild(styleSheet);
-}
-// Adding The Keyframes
-styleSheet.sheet.insertRule(`@keyframes ${name} {${styles}}`,
-styleSheet.length
-);
-}
-
-
+//// Settando valores ////
 mais.innerText = '+'
 menos.innerText = '-'
 vezes.innerText = '×'
 dividido.innerText = '÷'
 visor.innerText = 'Resultado'
-
-
 primeiroNumero.setAttribute('placeholder', 'Primeiro Valor')
 primeiroNumero.setAttribute('type', 'number')
 segundoNumero.setAttribute('placeholder', 'Segundo Valor')
@@ -43,6 +28,7 @@ main.appendChild(mais)
 main.appendChild(menos)
 main.appendChild(vezes)
 main.appendChild(dividido)
+/////////////////////////
 
 ///// Styles /////
 
@@ -139,9 +125,8 @@ visor.style.backgroundColor = '#FFE6F7'
 visor.style.textAlign = 'center'
 visor.style.color = '#C689C6'
 ////////////
-/*
-	https://colorhunt.co/palette/937dc2c689c6ffabe1ffe6f7
-	*/
+// Fim dos styles //
+
 //////////////////////////////////////
 
 ///// Operações /////
@@ -179,7 +164,4 @@ dividido.addEventListener('click', () => {
 	}
 	
 })
-
-
-
-
+/////////////////////////////
